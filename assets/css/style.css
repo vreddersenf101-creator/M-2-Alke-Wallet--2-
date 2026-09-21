@@ -1,0 +1,35 @@
+
+:root{
+  --primary:#0d6efd;
+  --primary-dark:#0a58ca;
+  --fintech-bg:#f0f4ff;
+  --success:#198754;
+  --danger:#dc3545;
+  --card-radius:1.2rem;
+  --shadow-soft:0 10px 30px rgba(13,110,253,.08);
+}
+body{font-family: 'Inter', system-ui, -apple-system, sans-serif; color:#1e293b;}
+.bg-fintech{background: radial-gradient(1200px 600px at 10% -10%, #dbeafe 0%, transparent 60%), radial-gradient(800px 400px at 90% 10%, #e0e7ff 0%, transparent 60%), #f8fafc;}
+.card{border-radius:var(--card-radius)!important; box-shadow:var(--shadow-soft);}
+.rounded-4{border-radius:var(--card-radius)!important;}
+.card-balance{background: linear-gradient(135deg, #0d6efd 0%, #4d8cff 40%, #7aa5ff 100%); color:white; border:none;}
+.card-balance .text-muted, .card-balance .text-white-50{color:rgba(255,255,255,.75)!important;}
+.navbar{backdrop-filter: blur(8px);}
+.btn-primary{background:var(--primary); border-color:var(--primary);}
+.btn-primary:hover{background:var(--primary-dark); border-color:var(--primary-dark);}
+.form-control:focus{box-shadow:0 0 0 0.2rem rgba(13,110,253,.15); border-color:var(--primary);}
+.list-group-item{transition:.2s;}
+.list-group-item:hover{background:#f8faff;}
+/* Lección 3 - Últimos Movimientos visualización datos */
+#tablaTransacciones tr{transition:.2s;}
+#tablaTransacciones tr:hover{background:#f1f5ff;}
+/* Responsive */
+@media (max-width: 768px){
+  .h2{font-size:1.5rem;}
+  .container{padding-left:1rem; padding-right:1rem;}
+  .card-body{padding:1.25rem!important;}
+}
+/* Animaciones jQuery Lección 6 */
+.fade-in{animation:fadeIn .6s ease-out;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);}}
+.toast{border-radius:12px;}
